@@ -1,0 +1,60 @@
+
+section{
+    
+}
+
+li{
+    font-size: 500;
+    background-color: brown;
+    }
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav cuerpo cuerpo"
+        "footer footer footer"            ;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: header;
+    background-color: blue;
+    place-items: center;
+}
+
+.nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: nav;
+    background-color: bisque;
+    padding: 10px 50px 10px 10px;
+    place-items: center;
+}
+
+.info{
+    grid-area: cuerpo;
+    background-color: aquamarine;
+    height: 400px;
+}
+
+
+.footer{
+
+    background-color: brown;
+    grid-area: footer;
+}
+
+
+.nav ul:hover{
+    color:blue;
+    font-size: 1000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
